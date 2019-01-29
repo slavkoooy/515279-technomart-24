@@ -1,0 +1,119 @@
+/*ОБЩИЕ СТИЛИ */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-top {
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.site-search-form {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.site-search-label {
+  content: url("../img/icon-search.svg");
+  opacity: 0.3;
+}
+
+.header-bookmarks::before {
+  content: url("../img/icon-bookmark.svg");
+  margin: 13px;
+  opacity: 0.3;
+}
+
+.header-basket::before {
+  content: url("../img/icon-cart.svg");
+  margin: 17px;
+  opacity: 0.3;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.header-top a {
+  color: #ffffff;
+}
+
+.header-number a::before {
+  content: url("../img/icon-phone.svg");
+  margin-right: 40px;
+  margin-left: 15px;
+}
+
+.social-button {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-button-vk {
+  background: #293449 url("../img/icon-vk.svg") no-repeat 50% 50%;
+}
+
+.social-button-facebook {
+  background: #293449 url("../img/icon-fb.svg") no-repeat 50% 50%;
+}
+
+.social-button-instagram {
+  background: #293449 url("../img/icon-insta.svg") no-repeat 50% 50%;
+}
+
+.text-del {
+  display: none;
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
+
+.header-sign-in a::before {
+  content: url("../img/icon-login.svg");
+  margin-right: 14px;
+}
+
+/* СТРАНИЦА КАТАЛОГА */
+
+.header-username::before {
+  content: url("../img/icon-user.svg");
+  margin: 13px;
+}
+
+.header-username-quit {
+  width: 20px;
+  height: 17px;
+  background: transparent url("../img/icon-logout.svg") no-repeat 50% 50%;
+  font-size: 0px;
+}
+
+.home-button {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  background: transparent url("../img/icon-home.svg") no-repeat 50% 50%;
+}
+
+.new-item .catalog-item-image::after {
+  content: url("../img/new flag.png");
+  position: relative;
+  top: -110px;
+  left: -65px;
+}
+
+.catalog-item-price .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 141px;
+  height: 38px;
+  background: url("../img/red-button.svg") no-repeat;
+  color: #ffffff;
+}

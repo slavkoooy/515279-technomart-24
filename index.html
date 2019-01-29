@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Техномарт»</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 <header class="main-header">
   <div class="header-top">
     <a class="header-logo" href="index.html">Техномарт</a>
-    <input type="search" name="site-search" placeholder="Поиск">
+    <form class="site-search-form">
+      <input type="search" id="site-search" name="site-search" placeholder="Поиск:">
+      <label class="site-search-label" for="site-search"></label>
+    </form>
     <a class="header-bookmarks" href="#">Закладки:
       <span class="bookmarks-count">0</span>
     </a>
@@ -74,7 +78,7 @@
     <p class="contacts-description">
       Вы можете забрать товар сами,заехав в наш офис:
     </p>
-    <img src="img/map.jpg" alt="Адрес нашего офиса" width="300" height="160">
+    <img src="img/map.png" alt="Наш офис на карте" width="300" height="158">
     <p class="contacts-button"><a href="mailto:#">Заблудились? Напишите нам!</a></p>
   </section>
 </main>
@@ -108,9 +112,21 @@
     </p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button social-button-vk" href="#">VK</a></li>
-        <li><a class="social-button social-button-facebook" href="#">Facebook</a></li>
-        <li><a class="social-button social-button-instagram" href="#">Instagram</a></li>
+        <li>
+          <a class="social-button social-button-vk" href="#">
+            <span class="text-del">VK</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button-facebook" href="#">
+            <span class="text-del">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button-instagram" href="#">
+            <span class="text-del">Instagram</span>
+          </a>
+        </li>
       </ul>
     </div>
     <p class="footer-feedback">

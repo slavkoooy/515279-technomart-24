@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог товаров</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <div class="header-top">
     <a class="header-logo" href="index.html">Техномарт</a>
-    <input type="search" name="site-search" placeholder="Поиск">
+    <form class="site-search-form">
+      <input type="search" id="site-search" name="site-search" placeholder="Поиск:">
+      <label class="site-search-label" for="site-search"></label>
+    </form>
     <a class="header-bookmarks" href="#">Закладки:
       <span class="bookmarks-count">0</span>
     </a>
@@ -53,7 +57,11 @@
 
 <main class="main-content">
   <ul class="breadcrumbs">
-    <li><a href="index.html">&#8962;</a></li>
+    <li>
+      <a class = "home-button" href="index.html">
+        <span class="text-del">&#8962;</span>
+      </a>
+    </li>
     <li><a href="#">Каталог</a></li>
     <li><a href="#">Инструмент</a></li>
     <li class="breadcrumbs-current">Перфораторы</li>
@@ -93,7 +101,7 @@
       <li class="catalog-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/bosch-bfg-3000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </a>
         </p>
         <h3>
@@ -109,7 +117,7 @@
       <li class="catalog-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/bosch-bfg-6000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </a>
         </p>
         <h3>
@@ -125,7 +133,7 @@
       <li class="catalog-item active-item new-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/bosch-bfg-2000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </a>
         </p>
         <h3>
@@ -140,7 +148,7 @@
       <li class="catalog-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/bosch-bfg-3000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </a>
         </p>
         <h3>
@@ -156,7 +164,7 @@
       <li class="catalog-item new-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/bosch-bfg-6000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </a>
         </p>
         <h3>
@@ -172,7 +180,7 @@
       <li class="catalog-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/bosch-bfg-2000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </a>
         </p>
         <h3>
@@ -187,7 +195,7 @@
       <li class="catalog-item new-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/bosch-bfg-3000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </a>
         </p>
         <h3>
@@ -203,7 +211,7 @@
       <li class="catalog-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/bosch-bfg-6000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </a>
         </p>
         <h3>
@@ -219,7 +227,7 @@
       <li class="catalog-item">
         <p class="catalog-item-image">
           <a href="catalog-item.html">
-            <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/bosch-bfg-2000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </a>
         </p>
         <h3>
@@ -264,9 +272,21 @@
     </p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button social-button-vk" href="#">VK</a></li>
-        <li><a class="social-button social-button-facebook" href="#">Facebook</a></li>
-        <li><a class="social-button social-button-instagram" href="#">Instagram</a></li>
+        <li>
+          <a class="social-button social-button-vk" href="#">
+            <span class="text-del">VK</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button-facebook" href="#">
+            <span class="text-del">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button-instagram" href="#">
+            <span class="text-del">Instagram</span>
+          </a>
+        </li>
       </ul>
     </div>
     <p class="footer-feedback">
