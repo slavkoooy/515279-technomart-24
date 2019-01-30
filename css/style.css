@@ -79,6 +79,94 @@ body {
   margin-right: 14px;
 }
 
+.categories-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.categories-item {
+  color: #ffffff;
+}
+
+.item-materials {
+  background-color: #ffbf47;
+}
+
+.item-materials::after {
+  content: url("../img/icon-1.svg");
+}
+
+.item-instruments {
+  background-color: #3bbce3;
+}
+
+.item-instruments::after {
+  content: url("../img/icon-2.svg");
+}
+
+.item-technics {
+  background-color: #dc91d8;
+}
+
+.item-technics::after {
+  content: url("../img/icon-3.svg");
+}
+
+.item-special-offers {
+  background-color: #8ed78f;
+}
+
+.item-special-offers::after {
+  content: url("../img/icon-4.svg");
+}
+
+.item-delivery {
+  background-color: #ffc047;
+}
+
+.item-delivery::after {
+  content: url("../img/icon-5.svg");
+}
+
+.new-item .popular-item-image::after {
+  content: url("../img/new flag.png");
+  position: relative;
+  top: -110px;
+  left: -65px;
+}
+
+.popular-item-price .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 141px;
+  height: 38px;
+  background: url("../img/red-button.svg") no-repeat;
+  color: #ffffff;
+}
+
+.services-item-delivery::after {
+  content: url("../img/delivery-icon.png");
+}
+
+.services-item-warranty::after {
+  content: url("../img/warranity-icon.png");
+}
+
+.services-item-credit::after {
+  content: url("../img/credit-icon.png");
+}
+
+.services-menu-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.services-menu-container::after {
+  content: url("../img/services-menu-shadow.png");
+}
+
 /* СТРАНИЦА КАТАЛОГА */
 
 .header-username::before {
