@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-1040.000000, -2357.000000)" fill="#EE3643">
+            <g id="map-popup" transform="translate(128.000000, 2347.000000)">
+                <g id="icon-close" transform="translate(912.000000, 10.000000)">
+                    <g id="Shape">
+                        <path d="M13.273,10.5 L20.695,3.078 C21.084,2.689 21.084,2.053 20.695,1.664 L19.336,0.305 C18.947,-0.084 18.311,-0.084 17.922,0.305 L10.5,7.727 L3.078,0.305 C2.689,-0.084 2.053,-0.084 1.664,0.305 L0.305,1.664 C-0.084,2.053 -0.084,2.689 0.305,3.078 L7.727,10.5 L0.306,17.922 C-0.083,18.311 -0.083,18.947 0.306,19.336 L1.665,20.695 C2.054,21.084 2.69,21.084 3.079,20.695 L10.501,13.273 L17.923,20.695 C18.312,21.084 18.948,21.084 19.337,20.695 L20.696,19.336 C21.085,18.947 21.085,18.311 20.696,17.922 L13.273,10.5 Z" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
