@@ -4,15 +4,16 @@
   <meta charset="utf-8">
   <title>Интернет-магазин «Техномарт»</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 
 <body>
 <header class="main-header">
   <div class="header-top">
     <a class="header-logo" href="index.html" aria-label="Логотип магазина Техномарт">Техномарт</a>
-    <form class="site-search-form" aria-label="Поиск по сайту">
+    <form class="site-search-form">
       <label for="site-search" class="site-search-icon"><span class="visually-hidden">Поиск</span></label>
-      <input type="search" id="site-search" name="site-search" placeholder="Поиск:" aria-label="Строка поиска по сайту">
+      <input type="search" id="site-search" name="site-search" class="site-search-line" placeholder="Поиск:" aria-label="Поиск по сайту">
     </form>
     <a class="header-bookmarks" href="bookmarks.html" aria-label="Кнопка закладок">Закладки:
       <span class="bookmarks-count">0</span>
@@ -84,7 +85,7 @@
               <h3>Дрели</h3>
               <p>Соседям на радость</p>
             </div>
-            <img src="img/slider-1.jpg" alt="">
+            <img src="img/slider-1.jpg" alt="Мужчина с дрелью" width="620" height="266">
             <a class="button" href="catalog.html" aria-label="Кнопка Открыть каталог">Открыть каталог</a>
           </div>
           <div class="slide slide-perforator">
@@ -92,7 +93,7 @@
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
             </div>
-            <img src="img/slider-2.jpg">
+            <img src="img/slider-2.jpg" alt="Мужчина с перфоратором" width="620" height="266">
             <a class="button" href="catalog.html" aria-label="Кнопка Открыть каталог">Открыть каталог</a>
           </div>
           <div class="slide-controls">
@@ -121,11 +122,12 @@
   </section>
 
   <section class="popular-items-container">
-    <p class="popular-items-header">
-    <h2>Популярные товары:</h2>
-    <a class="button" href="popular-items.html" aria-label="Перейти на страницу всех популярных товаров">Все популярные
-      товары</a>
-    </p>
+    <div class="popular-items-header">
+      <h2>Популярные товары:</h2>
+      <a class="button" href="popular-items.html" aria-label="Перейти на страницу всех популярных товаров">Все
+        популярные
+        товары</a>
+    </div>
     <ul class="popular-items-list">
       <li class="popular-item">
         <p class="popular-item-image">
@@ -194,10 +196,11 @@
   </section>
 
   <section class="popular-company-container">
-    <p class="popular-company-header">
-    <h2>Популярные производители:</h2>
-    <a class="button" href="all-company.html" aria-label="Перейти на страницу всех производителей">Все производители</a>
-    </p>
+    <div class="popular-company-header">
+      <h2>Популярные производители:</h2>
+      <a class="button" href="all-company.html" aria-label="Перейти на страницу всех производителей">Все
+        производители</a>
+    </div>
     <ul class="popular-company-list">
       <li class="popular-company-item">
         <p class="popular-company-image">
@@ -329,6 +332,7 @@
   </section>
 
   <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts-description">
       Вы можете забрать товар сами,заехав в наш офис:
     </p>
@@ -401,7 +405,8 @@
 <!--Попапы-->
 
 <section class="feedback-popup-container">
-  <form class="feedback-popup" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма обратной связи">
+  <h2 class="visually-hidden">Обратная связь</h2>
+  <form class="feedback-popup" action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
       <legend class="visually-hidden">Форма обратной связи</legend>
       <ul>
@@ -416,7 +421,7 @@
         <li>
           <label for="text-field">Текст письма:</label>
           <textarea id="text-field" name="text-field" rows="10" cols="50" placeholder="В свободной форме" required
-                    aria-label="Текст письма">
+                    aria-label="Текст письма обратной связи">
           </textarea>
         </li>
       </ul>
@@ -428,6 +433,7 @@
 </section>
 
 <section class="map-popup-container">
+  <h2 class="visually-hidden">Карта</h2>
   <img src="img/map-popup.png" width="943" height="449"
        alt="Расположение нашего офиса на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   <button class="button-close" aria-label="Кнопка закрыть окно с картой"><span class="visually-hidden">Закрыть</span>

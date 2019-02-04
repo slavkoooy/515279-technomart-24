@@ -9,9 +9,9 @@
 <header class="main-header">
   <div class="header-top">
     <a class="header-logo" href="index.html" aria-label="Логотип магазина Техномарт">Техномарт</a>
-    <form class="site-search-form" aria-label="Поиск по сайту">
+    <form class="site-search-form">
       <label for="site-search" class="site-search-icon"><span class="visually-hidden">Поиск</span></label>
-      <input type="search" id="site-search" name="site-search" placeholder="Поиск:" aria-label="Строка поиска по сайту">
+      <input type="search" id="site-search" name="site-search" class="site-search-line" placeholder="Поиск:" aria-label="Поиск по сайту">
     </form>
     <a class="header-bookmarks" href="bookmarks.html" aria-label="Кнопка закладок">Закладки:
       <span class="bookmarks-count">0</span>
@@ -72,7 +72,7 @@
   <section class="catalog">
     <h2 class="page-title">Перфораторы</h2>
     <form class="filters" action="https://echo.htmlacademy.ru" method="get"
-          oninput="maxprice.value=pricecount.value" aria-label="Фильтр товаров">
+          oninput="maxprice.value=pricecount.value">
       <h3 class="filters-title">Фильтр:</h3>
       <fieldset class="price-filter" aria-label="Фильтр по цене">
         <legend>Цена</legend>
@@ -117,6 +117,7 @@
             <input type="radio" name="power-supply" value="220v" id="220v" aria-label="Сетевые">
             <label for="220v">Сетевые</label>
           </li>
+        </ul>
       </fieldset>
       <button aria-label="Показать товары с применением фильтров">Показать</button>
     </form>
@@ -359,7 +360,7 @@
 </footer>
 
 <section class="add-item-popup">
-  <p class="add-item-description">Товар добавлен в корзину!</p>
+  <h2 class="add-item-description">Товар добавлен в корзину!</h2>
   <a class="button" href="basket.html" aria-label="Кнопка Оформить заказ">Оформить заказ</a>
   <button class="button" aria-label="Кнопка Продолжить покупки">Продолжить покупки</button>
   <button class="button-close" aria-label="Кнопка Закрыть окно"></button>
