@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Техномарт»</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +26,8 @@
     <a class="header-checkout" href="#" aria-label="Кнопка оформить заказ">Оформить заказ</a>
   </div>
 
-  <div class="header-middle">
+  <div class="header-bottom">
+    <div class="header-middle">
     <h1 class="header-title">
       Интернет-магазин<br>
       строительных материалов<br>
@@ -40,19 +43,21 @@
       <li class="header-sign-in"><a href="#" aria-label="Войти в личный кабинет">Войти</a></li>
       <li class="header-sign-up"><a href="#" aria-label="Зарегистрироваться на нашем сайте">Регистрация</a></li>
     </ul>
+    </div>
+
+    <nav class="header-navigation">
+      <ul class="header-site-navigation">
+        <li><a href="index.html" aria-label="Главная страница">Главная</a></li>
+        <li><a href="company.html" aria-label="О нашей компании">Компания</a></li>
+        <li><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
+        <li><a href="news.html" aria-label="Новости">Новости</a></li>
+        <li><a href="special-offers.html" aria-label="Спецпредложения">Спецпредложения</a></li>
+        <li><a href="delivery.html" aria-label="Способы доставки">Доставка</a></li>
+        <li><a href="contacts.html" aria-label="Контакты">Контакты</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <nav class="header-navigation">
-    <ul class="header-site-navigation">
-      <li><a href="index.html" aria-label="Главная страница">Главная</a></li>
-      <li><a href="company.html" aria-label="О нашей компании">Компания</a></li>
-      <li><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
-      <li><a href="news.html" aria-label="Новости">Новости</a></li>
-      <li><a href="special-offers.html" aria-label="Спецпредложения">Спецпредложения</a></li>
-      <li><a href="delivery.html" aria-label="Способы доставки">Доставка</a></li>
-      <li><a href="contacts.html" aria-label="Контакты">Контакты</a></li>
-    </ul>
-  </nav>
 </header>
 
 <main class="main-content">
@@ -323,16 +328,16 @@
       Техномарт работает со многими транспортными компаниями:
     </p>
     <ul class="about-company-delivery-items">
-      <li><b>Деловые линии</b></li>
-      <li><b>Автотрейдинг</b></li>
-      <li><b>ЖелДорЭкспедиция</b></li>
+      <li>Деловые линии</li>
+      <li>Автотрейдинг</li>
+      <li>ЖелДорЭкспедиция</li>
     </ul>
-    <p class="about-company-button"><a href="company.html" aria-label="Подробнее о нашей компании">Подробнее о
-      компании</a></p>
+    <a class="about-company-button" href="company.html" aria-label="Подробнее о нашей компании">Подробнее о
+      компании</a>
   </section>
 
   <section class="contacts">
-    <h2 class="visually-hidden">Контакты</h2>
+    <h2 class="contacts-title">Контакты</h2>
     <p class="contacts-description">
       Вы можете забрать товар сами,заехав в наш офис:
     </p>
