@@ -15,7 +15,8 @@
     <a class="header-logo" href="index.html" aria-label="Логотип магазина Техномарт">Техномарт</a>
     <form class="site-search-form">
       <label for="site-search" class="site-search-icon"><span class="visually-hidden">Поиск</span></label>
-      <input type="search" id="site-search" name="site-search" class="site-search-line" placeholder="Поиск:" aria-label="Поиск по сайту">
+      <input type="search" id="site-search" name="site-search" class="site-search-line" placeholder="Поиск:"
+             aria-label="Поиск по сайту">
     </form>
     <a class="header-bookmarks" href="bookmarks.html" aria-label="Кнопка закладок">Закладки:
       <span class="bookmarks-count">0</span>
@@ -28,21 +29,31 @@
 
   <div class="header-bottom">
     <div class="header-middle">
-    <h1 class="header-title">
-      Интернет-магазин<br>
-      строительных материалов<br>
-      и инструментов для ремонта
-    </h1>
-    <address class="header-contacts" aria-label="Наши контакты">
-      <p class="header-number"><a href="tel:+78125550555" aria-label="Позвонить нам по номеру +7 (812) 555-05-55">+7
-        (812) 555-05-55</a></p>
-      <p class="header-address" aria-label="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г.
-        Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    </address>
-    <ul class="header-login">
-      <li class="header-sign-in"><a href="#" aria-label="Войти в личный кабинет">Войти</a></li>
-      <li class="header-sign-up"><a href="#" aria-label="Зарегистрироваться на нашем сайте">Регистрация</a></li>
-    </ul>
+      <h1 class="header-title">
+        Интернет-магазин<br>
+        строительных материалов<br>
+        и инструментов для ремонта
+      </h1>
+      <address class="header-contacts" aria-label="Наши контакты">
+        <p class="header-number"><a href="tel:+78125550555" aria-label="Позвонить нам по номеру +7 (812) 555-05-55">+7
+          (812) 555-05-55</a></p>
+        <p class="header-address" aria-label="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г.
+          Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </address>
+      <ul class="header-login">
+        <li class="header-sign-in">
+          <a href="#" aria-label="Войти в личный кабинет">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+              <g fill="" fill-rule="nonzero">
+                <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                <path
+                  d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+              </g>
+            </svg>
+            Войти</a>
+        </li>
+        <li class="header-sign-up"><a href="#" aria-label="Зарегистрироваться на нашем сайте">Регистрация</a></li>
+      </ul>
     </div>
 
     <nav class="header-navigation">
@@ -145,8 +156,9 @@
           <span class="popular-item-title">BFG 9000</span>
         </h4>
         <p class="popular-item-price">
-          <del>32500 ₽</del>
-          <a class="button" href="#" aria-label="Добавить в корзину Перфоратор BOSCH BFG 9000, стоимость 25500 рублей">25500
+          <del class="delete-price">32500 ₽</del>
+          <a class="button-buy" href="#"
+             aria-label="Добавить в корзину Перфоратор BOSCH BFG 9000, стоимость 25500 рублей">25500
             ₽</a>
         </p>
       </li>
@@ -161,8 +173,9 @@
           <span class="popular-item-title">BFG 3000</span>
         </h4>
         <p class="popular-item-price">
-          <del>22500 ₽</del>
-          <a class="button" href="#" aria-label="Добавить в корзину Перфоратор BOSCH BFG 3000, стоимость 15500 рублей">15500
+          <del class="delete-price">22500 ₽</del>
+          <a class="button-buy" href="#"
+             aria-label="Добавить в корзину Перфоратор BOSCH BFG 3000, стоимость 15500 рублей">15500
             ₽</a>
         </p>
       </li>
@@ -177,8 +190,9 @@
           <span class="popular-item-title">BFG 6000</span>
         </h4>
         <p class="popular-item-price">
-          <del>30500 ₽</del>
-          <a class="button" href="#" aria-label="Добавить в корзину Перфоратор BOSCH BFG 6000, стоимость 25500 рублей">25500
+          <del class="delete-price">30500 ₽</del>
+          <a class="button-buy" href="#"
+             aria-label="Добавить в корзину Перфоратор BOSCH BFG 6000, стоимость 25500 рублей">25500
             ₽</a>
         </p>
       </li>
@@ -193,7 +207,8 @@
           <span class="popular-item-title">BFG 2000</span>
         </h4>
         <p class="popular-item-price">
-          <a class="button" href="#" aria-label="Добавить в корзину Перфоратор BOSCH BFG 2000, стоимость 12500 рублей">12500
+          <a class="button-buy" href="#"
+             aria-label="Добавить в корзину Перфоратор BOSCH BFG 2000, стоимость 12500 рублей">12500
             ₽</a>
         </p>
       </li>
@@ -312,7 +327,7 @@
           Залезть в долговую яму стало проще!<br>
           Кредитные консультанты придут вам на помощь.
         </p>
-        <a href="#" class="button" aria-label="Отправить заявку на оформление кредита">Отправить заявку</a>
+        <a href="#" class="button-credit" aria-label="Отправить заявку на оформление кредита">Отправить заявку</a>
       </li>
     </ul>
   </section>
@@ -332,7 +347,7 @@
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <a class="about-company-button" href="company.html" aria-label="Подробнее о нашей компании">Подробнее о
+    <a class="button" href="company.html" aria-label="Подробнее о нашей компании">Подробнее о
       компании</a>
   </section>
 
@@ -344,8 +359,8 @@
     <img src="img/map.png"
          alt="Расположение нашего офиса на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300"
          height="158">
-    <p class="contacts-button"><a href="mailto:info@technomart.ru"
-                                  aria-label="Если заблудились, напишите нам на почту info@technomart.ru">Заблудились?
+    <a class="button" href="mailto:info@technomart.ru"
+       aria-label="Если заблудились, напишите нам на почту info@technomart.ru">Заблудились?
       Напишите нам!</a></p>
   </section>
 </main>
@@ -360,15 +375,19 @@
     </address>
     <nav class="footer-navigation">
       <ul class="footer-site-navigation">
-        <li><a href="company.html" aria-label="О нашей компании">Компания</a></li>
-        <li><a href="news.html" aria-label="Новости">Новости</a></li>
-        <li><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
-        <li><a href="delivery.html" aria-label="Способы доставки">Доставка</a></li>
-        <li><a href="contacts.html" aria-label="Контакты">Контакты</a></li>
-        <li><a href="materials.html" aria-label="Материалы для ремонта">Материалы</a></li>
-        <li><a href="technics.html" aria-label="Техника для стройки">Техника</a></li>
-        <li><a href="instruments.html" aria-label="Инструменты для ремонта">Инструмент</a></li>
-        <li><a href="special-offers.html" aria-label="Спецпредложения">Спецпредложения</a></li>
+        <div class="footer-site-navigation-top">
+          <li><a href="company.html" aria-label="О нашей компании">Компания</a></li>
+          <li><a href="news.html" aria-label="Новости">Новости</a></li>
+          <li><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
+          <li><a href="delivery.html" aria-label="Способы доставки">Доставка</a></li>
+          <li><a href="contacts.html" aria-label="Контакты">Контакты</a></li>
+        </div>
+        <div class="footer-site-navigation-bottom">
+          <li><a href="materials.html" aria-label="Материалы для ремонта">Материалы</a></li>
+          <li><a href="technics.html" aria-label="Техника для стройки">Техника</a></li>
+          <li><a href="instruments.html" aria-label="Инструменты для ремонта">Инструмент</a></li>
+          <li><a href="special-offers.html" aria-label="Спецпредложения">Спецпредложения</a></li>
+        </div>
       </ul>
     </nav>
   </div>
@@ -398,10 +417,10 @@
       </ul>
     </div>
     <p class="footer-feedback">
-      <b>Обратная связь:</b> <a class="button" href="#" aria-label="Кнопка для обратной связи">mail@htmlacademy.ru</a>
+      <b>Обратная связь:</b> <a class="feedback-button" href="#" aria-label="Кнопка для обратной связи">mail@htmlacademy.ru</a>
     </p>
     <p class="footer-copyright">
-      <b>Разработано - </b> <a class="button" href="https://htmlacademy.ru"
+      <b>Разработано - </b> <a class="copyright-button" href="https://htmlacademy.ru"
                                aria-label="Разработано с помощью HTML Academy">HTML Academy</a>
     </p>
   </div>
