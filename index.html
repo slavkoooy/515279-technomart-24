@@ -75,218 +75,225 @@
       </ul>
     </nav>
   </div>
-
 </header>
 
 <main class="main-content-index">
-  <section class="categories-container">
-    <h2 class="visually-hidden">Категории:</h2>
-    <ul class="categories-list">
-      <li class="categories-item item-materials new-item">
-        <div class="category-description">
-          <h3>Материалы</h3>
-          <a href="materials.html" aria-label="Кнопка материалы для ремонта">на любой вкус</a>
-        </div>
-      </li>
-      <li class="categories-item item-instruments">
-        <div class="category-description">
-          <h3>Инструмент</h3>
-          <a href="instruments.html" aria-label="Кнопка инструменты для ремонта">на все случаи</a>
-        </div>
-      </li>
-      <li class="categories-item item-technics">
-        <div class="category-description">
-          <h3>Техника</h3>
-          <a href="technics.html" aria-label="Кнопка техника для стройки">для стройки</a>
-        </div>
-      </li>
-
-      <li class="item-slider">
-        <div class="slider-container">
-          <div class="slide slide-drill">
-            <div class="slide-description">
-              <h3>Дрели</h3>
-              <p>Соседям на радость</p>
+  <div class="main-wrapper">
+    <section class="categories-container">
+      <h2 class="visually-hidden">Категории:</h2>
+      <ul class="categories-list">
+        <div class="categories-list-left">
+          <li class="categories-item item-materials new-item">
+            <div class="category-description">
+              <h3>Материалы</h3>
+              <a href="materials.html" aria-label="Кнопка материалы для ремонта">на любой вкус</a>
             </div>
-            <img src="img/slider-1.jpg" alt="Мужчина с дрелью" width="620" height="266">
-            <a class="button" href="catalog.html" aria-label="Кнопка Открыть каталог">Открыть каталог</a>
-          </div>
-          <div class="slide slide-perforator">
-            <div class="slide-description">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
+          </li>
+          <li class="categories-item item-instruments">
+            <div class="category-description">
+              <h3>Инструмент</h3>
+              <a href="instruments.html" aria-label="Кнопка инструменты для ремонта">на все случаи</a>
             </div>
-            <img src="img/slider-2.jpg" alt="Мужчина с перфоратором" width="620" height="266">
-            <a class="button" href="catalog.html" aria-label="Кнопка Открыть каталог">Открыть каталог</a>
-          </div>
-          <div class="slide-controls">
-            <div class="slide-arrows"></div>
-            <div class="slide-toogle">
-              <input type="radio" name="slide-toogle" checked aria-label="Кнопка первого слайда">
-              <input type="radio" name="slide-toogle" aria-label="Кнопка второго слайда">
+          </li>
+          <li class="item-slider">
+            <div class="slider-container">
+              <input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+              <input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+              <div class="slider-controls-toogles">
+                <label class="slider-toogle slider-toogle-1" for="slide-1">Первый</label>
+                <label class="slider-toogle slider-toogle-2" for="slide-2">Второй</label>
+              </div>
+              <div class="slider-controls-arrows">
+                <label class="slider-arrow slider-arrow-1" for="slide-1">Назад</label>
+                <label class="slider-arrow slider-arrow-2" for="slide-2">Вперед</label>
+              </div>
+              <div class="slide-item slide-item-1">
+                <div class="slide-description">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость</p>
+                  <a class="button button-slider" href="catalog.html" aria-label="Кнопка Открыть каталог">Открыть
+                    каталог</a>
+                </div>
+              </div>
+              <div class="slide-item slide-item-2">
+                <div class="slide-description">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="button button-slider" href="catalog.html" aria-label="Кнопка Открыть каталог">Открыть
+                    каталог</a>
+                </div>
+              </div>
             </div>
-          </div>
+          </li>
         </div>
-      </li>
 
-      <li class="categories-item item-special-offers">
-        <div class="category-description">
-          <h3>Скидки 50%</h3>
-          <a href="special-offers.html" aria-label="Кнопка Спецпредложения">на 350 товаров</a>
+        <div class="categories-list-right">
+          <li class="categories-item item-technics">
+            <div class="category-description">
+              <h3>Техника</h3>
+              <a href="technics.html" aria-label="Кнопка техника для стройки">для стройки</a>
+            </div>
+          </li>
+          <li class="categories-item item-special-offers">
+            <div class="category-description">
+              <h3>Скидки 50%</h3>
+              <a href="special-offers.html" aria-label="Кнопка Спецпредложения">на 350 товаров</a>
+            </div>
+          </li>
+          <li class="categories-item item-delivery">
+            <div class="category-description">
+              <h3>Доставка</h3>
+              <a href="delivery.html" aria-label="кнопка Способы доставки">бесплатно</a>
+            </div>
+          </li>
         </div>
-      </li>
-      <li class="categories-item item-delivery">
-        <div class="category-description">
-          <h3>Доставка</h3>
-          <a href="delivery.html" aria-label="кнопка Способы доставки">бесплатно</a>
-        </div>
-      </li>
-    </ul>
-  </section>
+      </ul>
+    </section>
 
-  <section class="popular-items-container">
-    <div class="popular-items-header">
-      <h2>Популярные товары:</h2>
-      <a class="button" href="popular-items.html" aria-label="Перейти на страницу всех популярных товаров">Все
-        популярные
-        товары</a>
-    </div>
-    <ul class="popular-items-list">
-      <li class="popular-item">
-        <p class="popular-item-image">
-          <a href="catalog-item.html">
-            <img src="img/bosch-bfg-9000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-          </a>
-        </p>
-        <h4>
-          <span class="popular-category">Перфоратор BOSCH</span>
-          <span class="popular-item-title">BFG 9000</span>
-        </h4>
-        <p class="popular-item-price">
-          <del class="delete-price">32500 ₽</del>
-          <a class="button-buy" href="#"
-             aria-label="Добавить в корзину Перфоратор BOSCH BFG 9000, стоимость 25500 рублей">25500
-            ₽</a>
-        </p>
-      </li>
-      <li class="popular-item">
-        <p class="popular-item-image">
-          <a href="catalog-item.html">
-            <img src="img/bosch-bfg-3000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-          </a>
-        </p>
-        <h4>
-          <span class="popular-category">Перфоратор BOSCH</span>
-          <span class="popular-item-title">BFG 3000</span>
-        </h4>
-        <p class="popular-item-price">
-          <del class="delete-price">22500 ₽</del>
-          <a class="button-buy" href="#"
-             aria-label="Добавить в корзину Перфоратор BOSCH BFG 3000, стоимость 15500 рублей">15500
-            ₽</a>
-        </p>
-      </li>
-      <li class="popular-item">
-        <p class="popular-item-image">
-          <a href="catalog-item.html">
-            <img src="img/bosch-bfg-6000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-          </a>
-        </p>
-        <h4>
-          <span class="popular-category">Перфоратор BOSCH</span>
-          <span class="popular-item-title">BFG 6000</span>
-        </h4>
-        <p class="popular-item-price">
-          <del class="delete-price">30500 ₽</del>
-          <a class="button-buy" href="#"
-             aria-label="Добавить в корзину Перфоратор BOSCH BFG 6000, стоимость 25500 рублей">25500
-            ₽</a>
-        </p>
-      </li>
-      <li class="popular-item new-item">
-        <p class="popular-item-image">
-          <a href="catalog-item.html">
-            <img src="img/bosch-bfg-2000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-          </a>
-        </p>
-        <h4>
-          <span class="popular-category">Перфоратор BOSCH</span>
-          <span class="popular-item-title">BFG 2000</span>
-        </h4>
-        <p class="popular-item-price">
-          <a class="button-buy" href="#"
-             aria-label="Добавить в корзину Перфоратор BOSCH BFG 2000, стоимость 12500 рублей">12500
-            ₽</a>
-        </p>
-      </li>
-    </ul>
-  </section>
+    <section class="popular-items-container">
+      <div class="popular-items-header">
+        <h2>Популярные товары:</h2>
+        <a class="button button-popular-items" href="popular-items.html" aria-label="Перейти на страницу всех популярных товаров">Все
+          популярные
+          товары</a>
+      </div>
+      <ul class="popular-items-list">
+        <li class="popular-item">
+          <p class="popular-item-image">
+            <a href="catalog-item.html">
+              <img src="img/bosch-bfg-9000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+            </a>
+          </p>
+          <h4>
+            <span class="popular-category">Перфоратор BOSCH</span>
+            <span class="popular-item-title">BFG 9000</span>
+          </h4>
+          <p class="popular-item-price">
+            <del class="delete-price">32500 ₽</del>
+            <a class="button-buy" href="#"
+               aria-label="Добавить в корзину Перфоратор BOSCH BFG 9000, стоимость 25500 рублей">25500
+              ₽</a>
+          </p>
+        </li>
+        <li class="popular-item">
+          <p class="popular-item-image">
+            <a href="catalog-item.html">
+              <img src="img/bosch-bfg-3000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+            </a>
+          </p>
+          <h4>
+            <span class="popular-category">Перфоратор BOSCH</span>
+            <span class="popular-item-title">BFG 3000</span>
+          </h4>
+          <p class="popular-item-price">
+            <del class="delete-price">22500 ₽</del>
+            <a class="button-buy" href="#"
+               aria-label="Добавить в корзину Перфоратор BOSCH BFG 3000, стоимость 15500 рублей">15500
+              ₽</a>
+          </p>
+        </li>
+        <li class="popular-item">
+          <p class="popular-item-image">
+            <a href="catalog-item.html">
+              <img src="img/bosch-bfg-6000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+            </a>
+          </p>
+          <h4>
+            <span class="popular-category">Перфоратор BOSCH</span>
+            <span class="popular-item-title">BFG 6000</span>
+          </h4>
+          <p class="popular-item-price">
+            <del class="delete-price">30500 ₽</del>
+            <a class="button-buy" href="#"
+               aria-label="Добавить в корзину Перфоратор BOSCH BFG 6000, стоимость 25500 рублей">25500
+              ₽</a>
+          </p>
+        </li>
+        <li class="popular-item new-item">
+          <p class="popular-item-image">
+            <a href="catalog-item.html">
+              <img src="img/bosch-bfg-2000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+            </a>
+          </p>
+          <h4>
+            <span class="popular-category">Перфоратор BOSCH</span>
+            <span class="popular-item-title">BFG 2000</span>
+          </h4>
+          <p class="popular-item-price">
+            <a class="button-buy" href="#"
+               aria-label="Добавить в корзину Перфоратор BOSCH BFG 2000, стоимость 12500 рублей">12500
+              ₽</a>
+          </p>
+        </li>
+      </ul>
+    </section>
 
-  <section class="popular-company-container">
-    <div class="popular-company-header">
-      <h2>Популярные производители:</h2>
-      <a class="button" href="all-company.html" aria-label="Перейти на страницу всех производителей">Все
-        производители</a>
-    </div>
-    <ul class="popular-company-list">
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/bosch-logo.png" width="126" height="37" alt="Логотип BOSCH">
-          </a>
-        </p>
-      </li>
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/makita-logo.png" width="123" height="40" alt="Логотип Makita">
-          </a>
-        </p>
-      </li>
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/dewalt-logo.png" width="146" height="44" alt="Логотип Dewalt">
-          </a>
-        </p>
-      </li>
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/interskol-logo.png" width="200" height="88" alt="Логотип Интерскол">
-          </a>
-        </p>
-      </li>
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/hitachi-logo.png" width="169" height="31" alt="Логотип Hitachi">
-          </a>
-        </p>
-      </li>
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/lg-logo.png" width="121" height="73" alt="Логотип LG">
-          </a>
-        </p>
-      </li>
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/aeg-logo.png" width="151" height="96" alt="Логотип AEG">
-          </a>
-        </p>
-      </li>
-      <li class="popular-company-item">
-        <p class="popular-company-image">
-          <a href="#">
-            <img src="img/metabo-logo.png" width="204" height="69" alt="Логотип Metabo">
-          </a>
-        </p>
-      </li>
-    </ul>
-  </section>
+    <section class="popular-company-container">
+      <div class="popular-company-header">
+        <h2>Популярные производители:</h2>
+        <a class="button" href="all-company.html" aria-label="Перейти на страницу всех производителей">Все
+          производители</a>
+      </div>
+      <ul class="popular-company-list">
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/bosch-logo.png" width="126" height="37" alt="Логотип BOSCH">
+            </a>
+          </p>
+        </li>
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/makita-logo.png" width="123" height="40" alt="Логотип Makita">
+            </a>
+          </p>
+        </li>
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/dewalt-logo.png" width="146" height="44" alt="Логотип Dewalt">
+            </a>
+          </p>
+        </li>
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/interskol-logo.png" width="200" height="88" alt="Логотип Интерскол">
+            </a>
+          </p>
+        </li>
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/hitachi-logo.png" width="169" height="31" alt="Логотип Hitachi">
+            </a>
+          </p>
+        </li>
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/lg-logo.png" width="121" height="73" alt="Логотип LG">
+            </a>
+          </p>
+        </li>
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/aeg-logo.png" width="151" height="96" alt="Логотип AEG">
+            </a>
+          </p>
+        </li>
+        <li class="popular-company-item">
+          <p class="popular-company-image">
+            <a href="#">
+              <img src="img/metabo-logo.png" width="204" height="69" alt="Логотип Metabo">
+            </a>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </div>
 
   <section class="services-container">
     <h2>Сервисы</h2>
@@ -470,7 +477,7 @@
         </li>
       </ul>
       <div class="feedback-popup-bottom-container">
-      <button class=" button button-send" aria-label="Отправить письмо обратной связи">Отправить</button>
+        <button class=" button button-send" aria-label="Отправить письмо обратной связи">Отправить</button>
       </div>
     </fieldset>
   </form>
