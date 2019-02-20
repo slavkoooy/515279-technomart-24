@@ -837,6 +837,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
+  height: 522px;
 }
 
 h2 {
@@ -1132,6 +1133,7 @@ h2 {
   line-height: 1.3;
   background: transparent;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .filters legend {
@@ -2018,7 +2020,8 @@ h2 {
 
 .services-header{
   width: 940px;
-  margin: 64px 0 67px 0;
+  height: 103px;
+  margin: 64px 0 -40px 0;
 }
 
 .services-header h2{ margin: 0 0 30px 0; }
@@ -2057,26 +2060,93 @@ h2 {
 
 .services-menu li:hover{ background-color: #293449; }
 
-.brand-filter input{
+.services-item {
+  position: relative;
+  padding: 0 0 0 80px;
+}
+
+.services-item p{ width: 350px; }
+
+.services-item::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.services-item-delivery::after{
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/delivery-icon.png");
+}
+
+.services-item-warranty::after{
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/warranity-icon.png");
+}
+
+.services-item-credit::after{
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/credit-icon.png");
+}
+
+.services-item h5 {
+  width: 150px;
+  color: #32425C;
+}
+
+.power-supply-filter li{ height: 25px; }
+
+.brand-filter input,
+.power-supply-filter input{
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+   appearance: none;
 }
 
-.brand-filter label{
-  padding: 0 0 0 30px;
+.brand-filter label,
+.power-supply-filter label{
+  padding: 0 0 0 35px;
 }
 
 .brand-filter .checkbox-indicator{
   position: absolute;
-  width: 23px;
+  width: 27px;
   height: 23px;
-  margin: 0 0 0 -30px;
-  background: #ffffff url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='23px' height='23px' viewBox='0 0 23 23' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Echeckbox-off%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Styleguide' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-638.000000, -3322.000000)' fill='%23C5C5C5' id='top-menu'%3E%3Cg transform='translate(-55.000000, 0.000000)'%3E%3Cg id='Group-9' transform='translate(212.000000, 3321.000000)'%3E%3Cg id='checkbox-off' transform='translate(481.000000, 1.000000)'%3E%3Cg id='Shape'%3E%3Cpath d='M20,2 C20.542,2 21,2.458 21,3 L21,20 C21,20.542 20.542,21 20,21 L3,21 C2.458,21 2,20.542 2,20 L2,3 C2,2.458 2.458,2 3,2 L20,2 Z M20,0 L3,0 C1.35,0 0,1.35 0,3 L0,20 C0,21.65 1.35,23 3,23 L20,23 C21.65,23 23,21.65 23,20 L23,3 C23,1.35 21.65,0 20,0 Z' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");;
+  margin: 0 0 0 -35px;
+  background: #ffffff url("../img/checkbox-off.svg") no-repeat;
+  cursor: pointer;
 }
 
-.brand-filter input:checked + .checkbox-indicator {
-  width: 27px;
-  background: #ffffff url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='27px' height='23px' viewBox='0 0 27 23' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Echeckbox-on%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Styleguide' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-818.000000, -3322.000000)' fill='%23C5C5C5' id='top-menu'%3E%3Cg transform='translate(-55.000000, 0.000000)'%3E%3Cg id='Group-9' transform='translate(212.000000, 3321.000000)'%3E%3Cg id='checkbox-on' transform='translate(661.000000, 1.000000)'%3E%3Cg id='Shape'%3E%3Cpolygon fill-rule='nonzero' points='7.285 7.486 4.456 10.315 12.239 18.098 26.171 4.166 23.343 1.337 12.239 12.439'%3E%3C/polygon%3E%3Cpath d='M21,20 C21,20.542 20.542,21 20,21 L3,21 C2.458,21 2,20.542 2,20 L2,3 C2,2.458 2.458,2 3,2 L19.908,2 L21.493,0.415 C21.0410154,0.146541778 20.5256891,0.00329969409 20,0 L3,0 C1.35,0 0,1.35 0,3 L0,20 C0,21.65 1.35,23 3,23 L20,23 C21.65,23 23,21.65 23,20 L23,10.171 L21,12.171 L21,20 Z' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.brand-filter input:checked + .checkbox-indicator { background: #ffffff url("../img/checkbox-on.svg") no-repeat; }
+
+.brand-filter .checkbox-indicator:hover{ background: #ffffff url("../img/checkbox-off-hover.svg") no-repeat; }
+
+.brand-filter input:checked  + .checkbox-indicator:hover { background: #ffffff url("../img/checkbox-on-hover.svg") no-repeat; }
+
+.brand-filter input:focus + .checkbox-indicator,
+.power-supply-filter input:focus + .radio-indicator { outline: 5px auto -webkit-focus-ring-color;}
+
+.power-supply-filter .radio-indicator{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 -35px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 4px solid rgb(197,197,197);
+  cursor: pointer;
+}
+
+.power-supply-filter input:checked +.radio-indicator{
+  background: radial-gradient(rgb(197,197,197) 0%, rgb(197,197,197) 40%, #ffffff 41%, #ffffff 100%);
+}
+
+.power-supply-filter .radio-indicator:hover { border-color: rgb(181,181,181); }
+
+.power-supply-filter input:checked + .radio-indicator:hover{
+  background: radial-gradient(rgb(181,181,181) 0%, rgb(181,181,181) 40%, #ffffff 41%, #ffffff 100%);
 }
