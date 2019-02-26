@@ -7,6 +7,7 @@
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext"
     rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js"></script>
 </head>
 <body>
 <header class="main-header">
@@ -197,10 +198,12 @@
                 <li><a href="#" aria-label="Сортировать по цене">По цене</a></li>
                 <li><a href="#" aria-label="Сортировать по типу">По типу</a></li>
                 <li><a href="#" aria-label="Сортировать по функционалу">По функционалу</a></li>
-                <li><a class="sort-button-up" href="#" aria-label="Сортировать по возрастанию"><span
-                  class="visually-hidden">По возрастанию</span></a></li>
-                <li><a class="sort-button-down" href="#" aria-label="Сортировать по убыванию"><span
-                  class="visually-hidden">По убыванию</span></a></li>
+                <div class="sort-buttons-group">
+                  <li><a class="sort-button-up" href="#" aria-label="Сортировать по возрастанию"><span
+                    class="visually-hidden">По возрастанию</span></a></li>
+                  <li><a class="sort-button-down" href="#" aria-label="Сортировать по убыванию"><span
+                    class="visually-hidden">По убыванию</span></a></li>
+                </div>
               </ul>
             </section>
 
@@ -466,7 +469,7 @@
   <div class="footer-bottom-wrapper">
     <div class="footer-bottom">
       <p class="footer-rights-reserved">
-        &#169; 2010-2017 Компания "Техномарт"<br>
+        &#169; 2010-2019 Компания «Техномарт»<br>
         Все права защищены
       </p>
       <div class="footer-social">
@@ -489,11 +492,12 @@
         </ul>
       </div>
       <p class="footer-feedback">
-        <b>Обратная связь:</b> <a class="feedback-button" href="#" aria-label="Кнопка для обратной связи">mail@htmlacademy.ru</a>
+        <b>Обратная связь:</b> <a class="feedback-button" href="mailto:mail@htmlacademy.ru"
+                                  aria-label="Кнопка для обратной связи">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-copyright">
-        <b>Разработано - </b> <a class="copyright-button" href="https://htmlacademy.ru"
-                                 aria-label="Разработано с помощью HTML Academy">HTML Academy</a>
+        <b>Разработано —</b> <a class="copyright-button" href="https://htmlacademy.ru"
+                                aria-label="Разработано с помощью HTML Academy">htmlacademy.ru</a>
       </p>
     </div>
   </div>
