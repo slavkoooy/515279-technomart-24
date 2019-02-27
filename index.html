@@ -3,11 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Техномарт»</title>
-  <link
-    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +13,7 @@
   <div class="header-top-wrapper">
     <div class="header-top">
       <a class="header-logo" href="index.html">
-        <img src="img/header-logo.png" alt="Логотип магазина Техномарт" width="110" height="19">
+        <img src="img/header-logo.png" alt="Логотип магазина Техномарт" width="110" height="18">
       </a>
       <form class="site-search-form">
         <input class="site-search-field" type="search" id="site-search" name="site-search" placeholder="Поиск:"
@@ -46,7 +44,7 @@
         <a class="header-number" href="tel:+78125550555" aria-label="Позвонить нам по номеру +7 (812) 555-05-55">+7
           (812) 555-05-55</a>
         <address class="header-address" aria-label="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г.
-          Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </address>
       </div>
       <ul class="header-login">
@@ -85,8 +83,8 @@
   <div class="main-wrapper">
     <section class="categories-container">
       <h2 class="visually-hidden">Категории:</h2>
-      <ul class="categories-list">
-        <div class="categories-list-left">
+      <div class="categories-list">
+        <ul class="categories-list-left">
           <li class="categories-item item-materials new-item">
             <div class="new-item-label"><span class="visually-hidden">Новинка</span></div>
             <div class="category-description">
@@ -130,9 +128,9 @@
               </div>
             </div>
           </li>
-        </div>
+        </ul>
 
-        <div class="categories-list-right">
+        <ul class="categories-list-right">
           <li class="categories-item item-technics">
             <div class="category-description">
               <h3>Техника</h3>
@@ -151,8 +149,8 @@
               <a href="delivery.html" aria-label="кнопка Способы доставки">бесплатно</a>
             </div>
           </li>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </section>
 
     <section class="popular-items-container">
@@ -396,13 +394,13 @@
         <p class="contacts-description">
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
-        <img class = "map-button" src="img/map.png"
+        <img class="map-button" src="img/map.png"
              alt="Расположение нашего офиса на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
              width="300"
              height="158">
         <a class="button contacts-button" href="mailto:info@technomart.ru"
            aria-label="Если заблудились, напишите нам на почту info@technomart.ru">Заблудились?
-          Напишите нам!</a></p>
+          Напишите нам!</a>
       </section>
     </div>
   </div>
@@ -416,6 +414,7 @@
           <img src="img/footer-logo.png" width="220" height="68" alt="Логотип магазина Техномарт">
         </a>
         <section class="footer-contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
           <address class="footer-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a class="footer-contacts-tel" href="tel:+78125550555"
              aria-label="Позвонить нам по номеру +7 (812) 555-05-55">+7
@@ -423,21 +422,21 @@
         </section>
       </div>
       <nav class="footer-navigation">
-        <ul class="footer-site-navigation">
-          <div class="footer-site-navigation-top">
+        <div class="footer-site-navigation">
+          <ul class="footer-site-navigation-top">
             <li><a href="company.html" aria-label="О нашей компании">Компания</a></li>
             <li><a href="news.html" aria-label="Новости">Новости</a></li>
             <li><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
             <li><a href="delivery.html" aria-label="Способы доставки">Доставка</a></li>
             <li><a href="contacts.html" aria-label="Контакты">Контакты</a></li>
-          </div>
-          <div class="footer-site-navigation-bottom">
+          </ul>
+          <ul class="footer-site-navigation-bottom">
             <li><a href="materials.html" aria-label="Материалы для ремонта">Материалы</a></li>
             <li><a href="technics.html" aria-label="Техника для стройки">Техника</a></li>
             <li><a href="instruments.html" aria-label="Инструменты для ремонта">Инструмент</a></li>
             <li><a href="special-offers.html" aria-label="Спецпредложения">Спецпредложения</a></li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
@@ -468,7 +467,8 @@
         </ul>
       </div>
       <p class="footer-feedback">
-        <b>Обратная связь:</b> <a class="feedback-button" href="mailto:mail@htmlacademy.ru" aria-label="Кнопка для обратной связи">mail@htmlacademy.ru</a>
+        <b>Обратная связь:</b> <a class="feedback-button" href="mailto:mail@htmlacademy.ru"
+                                  aria-label="Кнопка для обратной связи">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-copyright">
         <b>Разработано —</b> <a class="copyright-button" href="https://htmlacademy.ru"
@@ -511,7 +511,9 @@
 
 <section class="map-popup-container">
   <h2 class="visually-hidden">Карта</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1551171922218" width="943" height="449" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1551171922218"
+    width="943" height="449" allowfullscreen></iframe>
   <img class="visually-hidden" src="img/map-popup.png" width="943" height="449"
        alt="Расположение нашего офиса на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   <button class="button-close" aria-label="Кнопка закрыть окно с картой"><span class="visually-hidden">Закрыть</span>
@@ -522,10 +524,10 @@
   <button class="button-close" aria-label="Кнопка Закрыть окно"></button>
   <h2 class="add-item-description">Товар добавлен в корзину!</h2>
   <div class="add-item-popup-bottom-container">
-    <a class="button" href="basket.html" aria-label="Кнопка Оформить заказ">Оформить заказ</a>
+    <a class="button button-checkout" href="basket.html" aria-label="Кнопка Оформить заказ">Оформить заказ</a>
     <button class="button button-continue" aria-label="Кнопка Продолжить покупки">Продолжить покупки</button>
   </div>
 </section>
-
+<script src="js/script.js"></script>
 </body>
 </html>

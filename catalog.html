@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог товаров</title>
-  <link
-    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <script src="js/script.js"></script>
 </head>
 <body>
 <header class="main-header">
@@ -45,7 +43,7 @@
         <a class="header-number" href="tel:+78125550555" aria-label="Позвонить нам по номеру +7 (812) 555-05-55">+7
           (812) 555-05-55</a>
         <address class="header-address" aria-label="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г.
-          Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </address>
       </div>
       <div class="header-profile">
@@ -194,17 +192,17 @@
           <div class="catalog-container">
             <section class="sort-container">
               <h3>Сортировка:</h3>
-              <ul class="sort-list">
-                <li><a href="#" aria-label="Сортировать по цене">По цене</a></li>
-                <li><a href="#" aria-label="Сортировать по типу">По типу</a></li>
-                <li><a href="#" aria-label="Сортировать по функционалу">По функционалу</a></li>
+              <div class="sort-list">
+                <a href="#" aria-label="Сортировать по цене">По цене</a>
+                <a href="#" aria-label="Сортировать по типу">По типу</a>
+                <a href="#" aria-label="Сортировать по функционалу">По функционалу</a>
                 <div class="sort-buttons-group">
-                  <li><a class="sort-button-up" href="#" aria-label="Сортировать по возрастанию"><span
-                    class="visually-hidden">По возрастанию</span></a></li>
-                  <li><a class="sort-button-down" href="#" aria-label="Сортировать по убыванию"><span
-                    class="visually-hidden">По убыванию</span></a></li>
+                   <a class="sort-button-up" href="#" aria-label="Сортировать по возрастанию"><span
+                    class="visually-hidden">По возрастанию</span></a>
+                  <a class="sort-button-down" href="#" aria-label="Сортировать по убыванию"><span
+                    class="visually-hidden">По убыванию</span></a>
                 </div>
-              </ul>
+              </div>
             </section>
 
             <ul class="catalog-list">
@@ -440,6 +438,7 @@
           <img src="img/footer-logo.png" width="220" height="68" alt="Логотип магазина Техномарт">
         </a>
         <section class="footer-contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
           <address class="footer-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a class="footer-contacts-tel" href="tel:+78125550555"
              aria-label="Позвонить нам по номеру +7 (812) 555-05-55">+7
@@ -447,21 +446,21 @@
         </section>
       </div>
       <nav class="footer-navigation">
-        <ul class="footer-site-navigation">
-          <div class="footer-site-navigation-top">
+        <div class="footer-site-navigation">
+          <ul class="footer-site-navigation-top">
             <li><a href="company.html" aria-label="О нашей компании">Компания</a></li>
             <li><a href="news.html" aria-label="Новости">Новости</a></li>
             <li><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
             <li><a href="delivery.html" aria-label="Способы доставки">Доставка</a></li>
             <li><a href="contacts.html" aria-label="Контакты">Контакты</a></li>
-          </div>
-          <div class="footer-site-navigation-bottom">
+          </ul>
+          <ul class="footer-site-navigation-bottom">
             <li><a href="materials.html" aria-label="Материалы для ремонта">Материалы</a></li>
             <li><a href="technics.html" aria-label="Техника для стройки">Техника</a></li>
             <li><a href="instruments.html" aria-label="Инструменты для ремонта">Инструмент</a></li>
             <li><a href="special-offers.html" aria-label="Спецпредложения">Спецпредложения</a></li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
@@ -507,9 +506,10 @@
   <button class="button-close" aria-label="Кнопка Закрыть окно"></button>
   <h2 class="add-item-description">Товар добавлен в корзину!</h2>
   <div class="add-item-popup-bottom-container">
-    <a class="button" href="basket.html" aria-label="Кнопка Оформить заказ">Оформить заказ</a>
+    <a class="button button-checkout" href="basket.html" aria-label="Кнопка Оформить заказ">Оформить заказ</a>
     <button class="button button-continue" aria-label="Кнопка Продолжить покупки">Продолжить покупки</button>
   </div>
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>
