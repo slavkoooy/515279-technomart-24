@@ -350,7 +350,7 @@ template {
 
 body {
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
 
@@ -358,7 +358,6 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 42px;
   background-color: #293449;
 }
 
@@ -366,7 +365,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 940px;
-  height: 42px;
   font-size: 17px;
   line-height: 1.06;
   padding: 0 10px;
@@ -377,14 +375,15 @@ body {
 }
 
 .header-logo {
-  display: inline-block;
-  box-sizing: border-box;
+  display: block;
   width: 220px;
-  height: 47px;
-  padding: 12px 0 0 56px;
-  margin: 0 0 0 1px;
+}
+
+.header-logo img {
+  display: block;
+  padding: 12px 55px;
   background-color: #EE3643;
-  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 5px 0 0 #b42833;
 }
 
 .header-logo:hover {
@@ -448,18 +447,14 @@ body {
 
 .header-bookmarks::before,
 .header-basket::before {
-  margin: 0 13px 0 0;
-  opacity: 0.3;
-}
-
-.header-bookmarks::before,
-.header-basket::before {
   content: "";
   position: absolute;
   top: 12px;
   left: 17px;
   width: 14px;
   height: 15px;
+  margin: 0 13px 0 0;
+  opacity: 0.3;
 }
 
 .header-basket::before {
@@ -476,17 +471,15 @@ body {
 
 .header-bookmarks,
 .header-basket {
-  display: inline-block;
   box-sizing: border-box;
   position: relative;
   width: 150px;
-  padding: 12px 0 11px 16px;
-  text-align: center;
+  padding: 12px 20px 12px 45px;
   text-decoration: none;
 }
 
-.header-basket {
-  padding: 12px 0 11px 18px;
+.header-basket{
+  padding: 12px 20px 12px 50px;
 }
 
 .header-bookmarks:hover,
@@ -537,12 +530,13 @@ body {
 .header-middle {
   display: flex;
   justify-content: space-between;
-  width: 890px;
-  padding: 38px 10px 31px 65px;
+  width: 940px;
+  padding: 38px 10px 30px 10px;
 }
 
 .header-title {
-  width: 225px;
+  width: 196px;
+  margin-left: 53px;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -554,8 +548,7 @@ body {
   display: inline-block;
   position: relative;
   width: 170px;
-  height: 21px;
-  padding: 8px 22px 11px 72px;
+  padding: 8px 22px 8px 72px;
   margin: 7px 0 5px 0;
   font-size: 21px;
   font-style: normal;
@@ -575,12 +568,10 @@ body {
 }
 
 .header-contacts {
-  width: 280px;
-  height: 75px;
+  width: 270px;
 }
 
 .header-address {
-  height: 24px;
   margin: 3px 0 0 10px;
   font-size: 14px;
   font-style: normal;
@@ -588,33 +579,37 @@ body {
 }
 
 .header-login {
-  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 282px;
   padding: 0;
-  margin: 0;
+  margin: 7px 0 0 0;
 }
 
 .header-sign-in,
 .header-sign-up {
-  display: inline-block;
-  padding: 10px 0;
-  text-align: center;
+  box-sizing: border-box;
   background-color: #ffffff;
 }
 
-.header-sign-in {
+
+.header-sign-in a {
   position: relative;
-  padding: 9px 26px 11px 49px;
-  margin: 9px 6px 0 15px;
+  display: block;
+  padding: 11px 25px 11px 48px;
 }
 
 .header-sign-in svg {
   position: absolute;
-  top: 13px;
-  left: 15px;
+  top: 15px;
+  left: 14px;
 }
 
-.header-sign-up {
-  padding: 10px 24px 11px 24px;
+.header-sign-up a {
+  display: block; 
+  padding: 11px 24px 11px 24px;
 }
 
 .header-login a {
@@ -655,16 +650,16 @@ body {
 }
 
 .header-navigation {
-  width: 940px;
-  height: 60px;
   margin: 0 0 60px 0;
   background-color: #32425c;
 }
 
 .header-site-navigation {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  height: inherit;
+  flex-wrap: wrap;
+  width: 940px;
   padding: 0 24px;
   margin: 0;
   font-size: 17px;
@@ -673,8 +668,8 @@ body {
 }
 
 .header-site-navigation a {
-  display: inline-block;
-  padding: 19px 28px;
+  display: block;
+  padding: 20px 28px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -755,17 +750,17 @@ body {
 }
 
 .categories-item {
+  box-sizing: border-box;
   width: 300px;
-  height: 123px;
   margin: 0;
+  padding: 22px 0 22px 23px;
   color: #ffffff;
 }
 
 .categories-item a {
   display: inline-block;
   width: 135px;
-  height: 14px;
-  padding: 12px 0;
+  padding: 11px 0;
   margin: 0 0 0 2px;
   font-size: 14px;
   color: #ffffff;
@@ -787,20 +782,20 @@ body {
 .category-description::after {
   content: "";
   position: absolute;
-  top: 27px;
-  left: 196px;
+  top: 6px;
+  left: 172px;
   width: 78px;
   height: 72px;
 }
 
 .category-description {
   position: relative;
-  padding: 22px 0 0 23px;
 }
 
 .category-description h3 {
+  width: 135px;
   padding: 0;
-  margin: 0 0 13px 0;
+  margin: 0 0 14px 0;
   font-size: 24px;
   font-weight: bold;
 }
@@ -830,8 +825,8 @@ body {
 }
 
 .item-technics .category-description::after {
-  top: 25px;
-  left: 191px;
+  left: 168px;
+  top: 5px;
   background: url("../img/icon-3.svg") no-repeat 50% 50%;
 }
 
@@ -840,8 +835,7 @@ body {
 }
 
 .item-special-offers .category-description::after {
-  top: 25px;
-  left: 187px;
+  left: 162px;
   background: url("../img/icon-4.svg") no-repeat 50% 50%;
 }
 
@@ -850,8 +844,7 @@ body {
 }
 
 .item-delivery .category-description::after {
-  top: 27px;
-  left: 192px;
+  left: 168px;
   background: url("../img/icon-5.svg") no-repeat 50% 50%;
 }
 
@@ -860,7 +853,8 @@ body {
   display: inline-block;
   width: 80px;
   padding: 12px 29px 8px 30px;
-  font-family: 'PT Sans', sans-serif;
+  margin: 0 0 20px 0;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: bold;
   color: #ffffff;
@@ -896,7 +890,7 @@ body {
 
 .services-item p {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.85;
 }
@@ -947,7 +941,7 @@ h2 {
 }
 
 .about-company p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.85;
   letter-spacing: 0.1px;
@@ -980,7 +974,6 @@ h2 {
 .button {
   display: inline-block;
   width: 100px;
-  height: 14px;
   padding: 12px 60px;
   font-size: 14px;
   line-height: 1.2;
@@ -1011,7 +1004,7 @@ h2 {
 
 .contacts-description {
   width: 183px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.8;
   color: #000000;
@@ -1116,7 +1109,7 @@ h2 {
 }
 
 .page-description p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.85;
   letter-spacing: 0.05px;
@@ -1127,7 +1120,7 @@ h2 {
   display: flex;
   padding: 0;
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -1170,7 +1163,7 @@ h2 {
 .delete-price {
   display: block;
   margin: 0 0 8px 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1;
@@ -1184,7 +1177,7 @@ h2 {
 
 .catalog-list h4,
 .popular-items-list h4 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.1;
@@ -1223,7 +1216,7 @@ h2 {
 }
 
 .sort-container > * {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.3;
@@ -1246,7 +1239,7 @@ h2 {
 
 .filters {
   width: 220px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.3;
   text-transform: uppercase;
@@ -1260,7 +1253,7 @@ h2 {
 .apply-filters-button {
   width: 140px;
   height: 38px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.3;
   text-transform: uppercase;
@@ -1278,7 +1271,7 @@ h2 {
 .filters-title {
   height: 20px;
   padding: 9px 0 9px 19px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.4;
@@ -1302,7 +1295,7 @@ h2 {
   height: 20px;
   padding: 20px 0 18px 0;
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.4;
   color: #000000;
@@ -1485,8 +1478,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 130px;
-  margin: 0;
-  padding: 2px 0 0 72px;
+  margin: 4px 0 0 80px;
+  padding: 0;
 }
 
 .footer-feedback {
@@ -1553,13 +1546,12 @@ h2 {
 .popular-item {
   position: relative;
   width: 218px;
-  height: 315px;
   margin: 0 20px 20px 0;
   text-align: center;
 }
 
 .popular-item {
-  margin: 0;
+  margin: 0 0 21px 0;
 }
 
 .catalog-item:nth-child(3n) {
@@ -1686,7 +1678,7 @@ h2 {
   border-radius: 2px;
   color: #ffffff;
   font-size: 14px;
-  font-family: "Cuprum", sans-serif;
+  font-family: 'Cuprum', Arial, Helvetica, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -1831,7 +1823,7 @@ h2 {
 .price-controls input {
   width: 46px;
   padding: 10px 25px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 17px;
   text-align: center;
   border: none;
@@ -1990,7 +1982,7 @@ h2 {
 .feedback-popup input,
 .feedback-popup textarea {
   padding: 0 0 0 15px;
-  font-family: "PT Sans", serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   border: 2px solid #DEE3E4;
 }
@@ -2048,7 +2040,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 940px;
-  height: 408px;
 }
 
 .slider-container {
@@ -2173,7 +2164,7 @@ h2 {
   position: absolute;
   bottom: 22px;
   left: 25px;
-  padding: 12px 45px 12px 50px;
+  padding: 12px 45px 10px 50px;
 }
 
 .slide-description {
@@ -2209,7 +2200,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin: 0 0 85px 0;
+  margin: 0 0 65px 0;
 }
 
 .categories-list-left {
@@ -2218,10 +2209,13 @@ h2 {
   justify-content: space-between;
   align-content: space-between;
   width: 620px;
-  height: inherit;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.categories-list-left .categories-item {
+  margin: 0 0 20px 0;
 }
 
 .categories-list-right {
@@ -2229,7 +2223,6 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  height: inherit;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -2241,9 +2234,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 889px;
-  height: 89px;
   background-color: #f9f5f0;
-  padding: 0 23px 0 28px;
+  padding: 25px 23px 25px 28px;
   margin: 0 0 21px 0;
 }
 
@@ -2251,7 +2243,6 @@ h2 {
 .popular-company-header h2 {
   display: inline-block;
   width: 290px;
-  height: 30px;
   margin: 0;
   color: #32425c;
 }
@@ -2263,7 +2254,6 @@ h2 {
 .button-popular-items,
 .button-popular-company {
   width: 145px;
-  height: 14px;
   padding: 12px 54px;
 }
 
@@ -2275,14 +2265,16 @@ h2 {
 .popular-items-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
-  margin: 0 0 21px 0;
+  margin: 0;
 }
 
 .popular-company-item {
   width: 218px;
   height: 143px;
   border: 1px solid #eaeaea;
+  margin: 0 0 20px 0;
 }
 
 .popular-company-image {
@@ -2314,7 +2306,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  height: 310px;
   padding: 0;
   margin: 0;
 }
@@ -2332,7 +2323,7 @@ h2 {
 .services-header .services-description {
   width: 400px;
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.9;
 }
@@ -2405,7 +2396,7 @@ h2 {
   background-image: url("../img/warranity-icon.png");
 }
 
-.services-item-warranty p{
+.services-item-warranty p {
   width: 310px;
 }
 
@@ -2414,6 +2405,10 @@ h2 {
   width: 465px;
   height: 285px;
   background-image: url("../img/credit-icon.png");
+}
+
+.services-item-credit p {
+  width: 280px;
 }
 
 .button-credit {
@@ -2545,6 +2540,6 @@ h2 {
 }
 
 .slide-1:focus ~ .slider-controls-arrows .slider-arrow-2,
-.slide-2:focus ~ .slider-controls-arrows .slider-arrow-1{
+.slide-2:focus ~ .slider-controls-arrows .slider-arrow-1 {
   outline: 3px outset -webkit-focus-ring-color;
 }
