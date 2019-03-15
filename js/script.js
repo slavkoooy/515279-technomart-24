@@ -82,7 +82,7 @@ window.addEventListener('keydown', function (evt) {
 
 let addItemPopup = document.querySelector('.add-item-popup');
 let basketButton = document.querySelector('.header-basket');
-let basketCount = document.querySelector('.basket-count');
+let basketCount = basketButton.querySelector('.basket-count');
 let addItemShowButton = document.querySelectorAll('.buy-item-button');
 let addItemCloseButton = addItemPopup.querySelector('.button-close');
 let continueShoppingButton = addItemPopup.querySelector('.button-continue');
