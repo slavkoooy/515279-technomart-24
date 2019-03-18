@@ -83,7 +83,10 @@ window.addEventListener('keydown', function (evt) {
 let addItemPopup = document.querySelector('.add-item-popup');
 let basketButton = document.querySelector('.header-basket');
 let basketCount = basketButton.querySelector('.basket-count');
+let bookmarksButton = document.querySelector('.header-bookmarks');
+let bookmarksCount = bookmarksButton.querySelector('.bookmarks-count');
 let addItemShowButton = document.querySelectorAll('.buy-item-button');
+let addBookmarks = document.querySelectorAll('.bookmark-item-button');
 let addItemCloseButton = addItemPopup.querySelector('.button-close');
 let continueShoppingButton = addItemPopup.querySelector('.button-continue');
 
@@ -92,8 +95,16 @@ for (let i = 0; i < addItemShowButton.length; i++) {
     evt.preventDefault();
     addItemPopup.classList.add('popup-show');
     addItemPopup.querySelector('.button-checkout').focus();
-    basketButton.classList.add('header-basket-full');
+    basketButton.classList.add('header-item-full');
     basketCount.textContent++;
+  });
+}
+
+for (let i = 0; i < addBookmarks.length; i++){
+  addBookmarks[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    bookmarksButton.classList.add('header-item-full');
+    bookmarksCount.textContent++;
   });
 }
 
