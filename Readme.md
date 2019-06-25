@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Vyacheslav Hohlov](https://up.htmlacademy.ru/htmlcss/24/user/515279).
-* Наставник: [Артём самый лучший наставник](https://htmlacademy.ru/profile/artem).
+* Наставник: [Артём Альтигин](https://htmlacademy.ru/profile/artem).
 
 ---
 
